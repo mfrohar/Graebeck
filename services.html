@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services — Graebeck Construction Ltd.</title>
+  <meta name="description" content="Institutional construction, commercial build-out, historical restoration, LEED green building, project management, and renovation services — Graebeck Construction Ltd., Ottawa." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            onyx: '#1A1A1A', forest: '#227750', 'forest-dark': '#1a5c3a',
+            cool: '#F4F4F9', gold: '#D4AF37', 'gold-light': '#e8c84a',
+          },
+          fontFamily: { montserrat: ['Montserrat', 'sans-serif'], inter: ['Inter', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="css/custom.css" />
+</head>
+<body class="bg-cool text-onyx">
+
+  <!-- NAV -->
+  <nav id="navbar" class="fixed top-0 w-full z-50 nav-scrolled">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="index.html" class="flex items-center gap-3 no-underline">
+          <div class="footer-logo-mark" style="width:44px;height:44px;"><span class="font-montserrat font-black text-onyx text-xl">G</span></div>
+          <div>
+            <div class="font-montserrat font-black text-white text-lg tracking-wider leading-none">GRAEBECK</div>
+            <div class="text-gray-400 text-xs tracking-widest uppercase font-inter" style="font-size:0.6rem;">Construction Ltd.</div>
+          </div>
+        </a>
+        <div class="hidden md:flex items-center gap-10">
+          <a href="index.html"    class="nav-link">Home</a>
+          <a href="projects.html" class="nav-link">Projects</a>
+          <a href="services.html" class="nav-link active">Services</a>
+          <a href="about.html"    class="nav-link">About</a>
+          <a href="contact.html"  class="btn-primary" style="padding:12px 24px;font-size:0.72rem;">Get a Quote</a>
+        </div>
+        <button id="hamburger" class="hamburger md:hidden"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="md:hidden" style="background:#111;border-top:1px solid #2a2a2a;">
+      <a href="index.html"    class="mobile-nav-link">Home</a>
+      <a href="projects.html" class="mobile-nav-link">Projects</a>
+      <a href="services.html" class="mobile-nav-link">Services</a>
+      <a href="about.html"    class="mobile-nav-link">About</a>
+      <a href="contact.html"  class="mobile-nav-link" style="color:#D4AF37;">Get a Quote →</a>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 page-hero-content">
+      <p class="label-overline light">What We Do</p>
+      <div class="gold-divider"></div>
+      <h1 class="heading-display text-white" style="font-size:clamp(2.2rem,5vw,4rem);">Our Services</h1>
+      <p class="text-gray-400 font-inter mt-4 max-w-xl text-lg leading-relaxed">
+        From concept to commissioning — a full spectrum of construction services
+        delivered with the discipline Ottawa's most demanding projects require.
+      </p>
+    </div>
+  </div>
+
+  <!-- ─── SERVICE: INSTITUTIONAL ───────────────── -->
+  <section id="institutional" class="py-24 bg-cool">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div data-reveal>
+          <img src="https://images.unsplash.com/photo-1555636222-cae831e670b3?w=900&q=80"
+               alt="Institutional Construction" class="w-full h-80 object-cover" loading="lazy" />
+        </div>
+        <div data-reveal data-delay="120">
+          <p class="label-overline">01</p>
+          <div class="gold-divider"></div>
+          <h2 class="heading-section text-onyx text-3xl mb-5">Institutional Construction</h2>
+          <p class="text-gray-600 font-inter leading-relaxed mb-4">
+            Hospitals, government buildings, courthouses, civic centres, schools, and community facilities —
+            institutions demand a builder who understands public accountability, strict regulatory compliance,
+            and the scrutiny of public clients. Graebeck has delivered some of the National Capital Region's
+            most high-profile public works projects.
+          </p>
+          <p class="text-gray-600 font-inter leading-relaxed mb-6">
+            We are experienced with federal procurement frameworks, Infrastructure Ontario processes,
+            and public-private partnership models. Our teams are security-cleared where required and
+            understand the unique constraints of building while facilities remain operational.
+          </p>
+          <ul class="space-y-2">
+            <li class="flex items-center gap-3 font-inter text-sm text-gray-600"><span class="w-2 h-2 bg-forest rounded-full flex-shrink-0"></span>Hospitals & Health-Care Facilities</li>
+            <li class="flex items-center gap-3 font-inter text-sm text-gray-600"><span class="w-2 h-2 bg-forest rounded-full flex-shrink-0"></span>Federal & Municipal Government Buildings</li>
+            <li class="flex items-center gap-3 font-inter text-sm text-gray-600"><span class="w-2 h-2 bg-forest rounded-full flex-shrink-0"></span>Courts & Justice Facilities</li>
+            <li class="flex items-center gap-3 font-inter text-sm text-gray-600"><span class="w-2 h-2 bg-forest rounded-full flex-shrink-0"></span>Education & Community Centres</li>
+            <li class="flex items-center gap-3 font-inter text-sm text-gray-600"><span class="w-2 h-2 bg-forest rounded-full flex-shrink-0"></span>Emergency Services (Fire, Police, EMS)</li>
+          </ul>
+          <a href="projects.html" class="btn-dark mt-8 inline-flex">See Institutional Projects</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SERVICE: COMMERCIAL ─────────────────── -->
+  <section id="commercial" style="background:#fff;" class="py-24">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div class="order-2 lg:order-1" data-reveal data-delay="120">
+          <p class="label-overline">02</p>
+          <div class="gold-divider"></div>
+          <h2 class="heading-section text-onyx text-3xl mb-5">Commercial Build-Out</h2>
+          <p class="text-gray-600 font-inter leading-relaxed mb-4">
+            Office towers, retail complexes, mixed-use podiums, and industrial facilities —
+            commercial clients need a contractor who respects their bottom line as much as
+            their vision. Graebeck brings iron-clad scheduling, transparent budget reporting,
+            and a track record of on-time delivery to every commercial mandate.
+          </p>
+          <p class="text-gray-600 font-inter leading-relaxed mb-6">
+            We handle full core-and-shell construction, tenant coordination, and phased
+            occupancy planning. Our value engineering process routinely identifies 5–10%
+            in savings without compromising design quality.
+          </p>
+          <ul class="space-y-2">
+            <li class="flex items-center gap-3 font-inter text-sm text-gray-600"><span class="w-2 h-2 bg-forest rounded-full flex-shrink-0"></span>Office & Corporate Headquarters</li>
+            <li class="flex items-center gap-3 font-inter text-sm text-gray-600"><span class="w-2 h-2 bg-forest rounded-full flex-shrink-0"></span>Retail & Mixed-Use Developments</li>
+            <li class="flex items-center gap-3 font-inter text-sm text-gray-600"><span class="w-2 h-2 bg-forest rounded-full flex-shrink-0"></span>Industrial & Warehouse Facilities</li>
+            <li class="flex items-center gap-3 font-inter text-sm text-gray-600"><span class="w-2 h-2 bg-forest rounded-full flex-shrink-0"></span>Hospitality & Multi-Residential Podiums</li>
+          </ul>
+          <a href="projects.html" class="btn-dark mt-8 inline-flex">See Commercial Projects</a>
+        </div>
+        <div class="order-1 lg:order-2" data-reveal>
+          <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=900&q=80"
+               alt="Commercial Build-Out" class="w-full h-80 object-cover" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SERVICE: RESTORATION ─────────────────── -->
+  <section id="restoration" class="py-24 bg-cool">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div data-reveal>
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&q=80"
+               alt="Historical Restoration" class="w-full h-80 object-cover" loading="lazy" />
+        </div>
+        <div data-reveal data-delay="120">
+          <p class="label-overline">03</p>
+          <div class="gold-divider"></div>
+          <h2 class="heading-section text-onyx text-3xl mb-5">Historical Restoration</h2>
+          <p class="text-gray-600 font-inter leading-relaxed mb-4">
+            Heritage buildings demand a builder who understands that the original craftsman's
+            intent matters as much as structural integrity. Graebeck's restoration specialists
+            work to the Standards and Guidelines for the Conservation of Historic Places in Canada,
+            ensuring every intervention preserves, stabilizes, and honours the built heritage.
+          </p>
+          <p class="text-gray-600 font-inter leading-relaxed mb-6">
+            From masonry repointing and carved stone replacement to timber frame repair and
+            heritage window restoration — our team brings technical skill and genuine reverence
+            for historic fabric to every restoration project.
+          </p>
+          <ul class="space-y-2">
+            <li class="flex items-center gap-3 font-inter text-sm text-gray-600"><span class="w-2 h-2 bg-forest rounded-full flex-shrink-0"></span>Masonry Cleaning, Repointing & Replacement</li>
+            <li class="flex items-center gap-3 font-inter text-sm text-gray-600"><span class="w-2 h-2 bg-forest rounded-full flex-shrink-0"></span>Heritage Façade Rehabilitation</li>
+            <li class="flex items-center gap-3 font-inter text-sm text-gray-600"><span class="w-2 h-2 bg-forest rounded-full flex-shrink-0"></span>Structural Stabilization of Historic Fabric</li>
+            <li class="flex items-center gap-3 font-inter text-sm text-gray-600"><span class="w-2 h-2 bg-forest rounded-full flex-shrink-0"></span>Roofing: Copper, Slate & Period Materials</li>
+            <li class="flex items-center gap-3 font-inter text-sm text-gray-600"><span class="w-2 h-2 bg-forest rounded-full flex-shrink-0"></span>Parks Canada Standards Compliant</li>
+          </ul>
+          <a href="projects.html" class="btn-dark mt-8 inline-flex">See Restoration Projects</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SERVICE: LEED ─────────────────── -->
+  <section id="leed" style="background:#fff;" class="py-24">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div class="order-2 lg:order-1" data-reveal data-delay="120">
+          <p class="label-overline">04</p>
+          <div class="gold-divider"></div>
+          <h2 class="heading-section text-onyx text-3xl mb-5">LEED & Green Building</h2>
+          <p class="text-gray-600 font-inter leading-relaxed mb-4">
+            Sustainability is not an add-on for Graebeck — it's embedded in our standard
+            construction practices. We have supported LEED Certified, Silver, Gold, and Platinum
+            projects across residential, commercial, and institutional sectors.
+          </p>
+          <p class="text-gray-600 font-inter leading-relaxed mb-6">
+            Our team maintains detailed waste diversion logs, sources local and recycled materials,
+            and coordinates with mechanical and electrical sub-trades to maximize energy
+            performance credits. We can serve as your LEED compliance coordinator from
+            pre-design through final certification submission.
+          </p>
+          <ul class="space-y-2">
+            <li class="flex items-center gap-3 font-inter text-sm text-gray-600"><span class="w-2 h-2 bg-forest rounded-full flex-shrink-0"></span>LEED Certification Support & Documentation</li>
+            <li class="flex items-center gap-3 font-inter text-sm text-gray-600"><span class="w-2 h-2 bg-forest rounded-full flex-shrink-0"></span>Construction Waste Diversion Management</li>
+            <li class="flex items-center gap-3 font-inter text-sm text-gray-600"><span class="w-2 h-2 bg-forest rounded-full flex-shrink-0"></span>Low-VOC & Recycled Material Sourcing</li>
+            <li class="flex items-center gap-3 font-inter text-sm text-gray-600"><span class="w-2 h-2 bg-forest rounded-full flex-shrink-0"></span>Net-Zero Ready Envelope Detailing</li>
+          </ul>
+        </div>
+        <div class="order-1 lg:order-2" data-reveal>
+          <img src="https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?w=900&q=80"
+               alt="LEED Green Building" class="w-full h-80 object-cover" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SERVICE: MANAGEMENT ─────────────────── -->
+  <section id="management" class="py-24 bg-cool">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div data-reveal>
+          <img src="https://images.unsplash.com/photo-1541976590-713941681591?w=900&q=80"
+               alt="Project Management" class="w-full h-80 object-cover" loading="lazy" />
+        </div>
+        <div data-reveal data-delay="120">
+          <p class="label-overline">05</p>
+          <div class="gold-divider"></div>
+          <h2 class="heading-section text-onyx text-3xl mb-5">Project Management</h2>
+          <p class="text-gray-600 font-inter leading-relaxed mb-4">
+            For owners who require independent, expert oversight of their construction program,
+            Graebeck offers dedicated project management services. We act as your owner's
+            representative — protecting your interests, managing your schedule, and holding
+            your budget accountable at every milestone.
+          </p>
+          <ul class="space-y-2">
+            <li class="flex items-center gap-3 font-inter text-sm text-gray-600"><span class="w-2 h-2 bg-forest rounded-full flex-shrink-0"></span>Schedule Development & Monitoring</li>
+            <li class="flex items-center gap-3 font-inter text-sm text-gray-600"><span class="w-2 h-2 bg-forest rounded-full flex-shrink-0"></span>Sub-Trade Tender & Procurement</li>
+            <li class="flex items-center gap-3 font-inter text-sm text-gray-600"><span class="w-2 h-2 bg-forest rounded-full flex-shrink-0"></span>RFI & Submittal Management</li>
+            <li class="flex items-center gap-3 font-inter text-sm text-gray-600"><span class="w-2 h-2 bg-forest rounded-full flex-shrink-0"></span>Cost Reporting & Change Order Control</li>
+            <li class="flex items-center gap-3 font-inter text-sm text-gray-600"><span class="w-2 h-2 bg-forest rounded-full flex-shrink-0"></span>Deficiency & Closeout Management</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SERVICE: RENOVATION ─────────────────── -->
+  <section id="renovation" style="background:#fff;" class="py-24">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div class="order-2 lg:order-1" data-reveal data-delay="120">
+          <p class="label-overline">06</p>
+          <div class="gold-divider"></div>
+          <h2 class="heading-section text-onyx text-3xl mb-5">Renovation & Retrofit</h2>
+          <p class="text-gray-600 font-inter leading-relaxed mb-4">
+            Extending the life and performance of your existing asset is often the smartest
+            capital investment you can make. Graebeck specializes in occupied-building
+            renovations, seismic retrofits, building envelope upgrades, and full interior
+            gut-and-rebuild programs.
+          </p>
+          <p class="text-gray-600 font-inter leading-relaxed mb-6">
+            Our renovation teams understand how to work around active tenants and building
+            users. Detailed noise, dust, and vibration management plans are standard on all
+            occupied-building projects.
+          </p>
+          <ul class="space-y-2">
+            <li class="flex items-center gap-3 font-inter text-sm text-gray-600"><span class="w-2 h-2 bg-forest rounded-full flex-shrink-0"></span>Occupied-Building Phased Renovation</li>
+            <li class="flex items-center gap-3 font-inter text-sm text-gray-600"><span class="w-2 h-2 bg-forest rounded-full flex-shrink-0"></span>Seismic & Structural Retrofits</li>
+            <li class="flex items-center gap-3 font-inter text-sm text-gray-600"><span class="w-2 h-2 bg-forest rounded-full flex-shrink-0"></span>Mechanical & Electrical Upgrades</li>
+            <li class="flex items-center gap-3 font-inter text-sm text-gray-600"><span class="w-2 h-2 bg-forest rounded-full flex-shrink-0"></span>Building Envelope Improvements</li>
+          </ul>
+          <a href="contact.html" class="btn-dark mt-8 inline-flex">Discuss Your Retrofit</a>
+        </div>
+        <div class="order-1 lg:order-2" data-reveal>
+          <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=900&q=80"
+               alt="Renovation & Retrofit" class="w-full h-80 object-cover" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUR PROCESS -->
+  <section style="background:var(--onyx);" class="py-24">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <p class="label-overline light" data-reveal>How We Work</p>
+        <div class="gold-divider mx-auto"></div>
+        <h2 class="heading-section text-white text-4xl" data-reveal data-delay="100">Our Process</h2>
+        <p class="text-gray-400 font-inter mt-4 max-w-xl mx-auto" data-reveal data-delay="200">
+          Every Graebeck project follows a disciplined, transparent process — from first conversation to final handover.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="text-center" data-reveal>
+          <div class="process-num mx-auto mb-4" style="font-size:4rem;text-align:center;">01</div>
+          <h3 class="font-montserrat font-bold text-white text-lg mb-3">Discovery</h3>
+          <p class="text-gray-400 font-inter text-sm leading-relaxed">We listen first. Understanding your goals, constraints, and timeline before we touch a pencil.</p>
+        </div>
+        <div class="text-center" data-reveal data-delay="100">
+          <div class="process-num mx-auto mb-4" style="font-size:4rem;text-align:center;">02</div>
+          <h3 class="font-montserrat font-bold text-white text-lg mb-3">Estimate & Planning</h3>
+          <p class="text-gray-400 font-inter text-sm leading-relaxed">Detailed estimating, value engineering, and a realistic schedule presented transparently for your approval.</p>
+        </div>
+        <div class="text-center" data-reveal data-delay="200">
+          <div class="process-num mx-auto mb-4" style="font-size:4rem;text-align:center;">03</div>
+          <h3 class="font-montserrat font-bold text-white text-lg mb-3">Execution</h3>
+          <p class="text-gray-400 font-inter text-sm leading-relaxed">Experienced site teams, rigorous daily reporting, and proactive risk management throughout construction.</p>
+        </div>
+        <div class="text-center" data-reveal data-delay="300">
+          <div class="process-num mx-auto mb-4" style="font-size:4rem;text-align:center;">04</div>
+          <h3 class="font-montserrat font-bold text-white text-lg mb-3">Handover</h3>
+          <p class="text-gray-400 font-inter text-sm leading-relaxed">A clean, documented closeout: deficiency resolution, O&M manuals, and training for your facilities team.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section py-24">
+    <div class="max-w-3xl mx-auto px-6 lg:px-8 text-center">
+      <h2 class="heading-section text-white text-3xl mb-4">Ready to Get Started?</h2>
+      <p class="text-gray-400 font-inter mb-8">Tell us about your project and we'll schedule a no-obligation consultation.</p>
+      <a href="contact.html" class="btn-primary">Request a Quote</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 py-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div class="lg:col-span-1">
+          <div class="flex items-center gap-3 mb-5">
+            <div class="footer-logo-mark"><span class="font-montserrat font-black text-onyx text-xl">G</span></div>
+            <div>
+              <div class="font-montserrat font-black text-white text-lg tracking-wider leading-none">GRAEBECK</div>
+              <div class="text-gray-500 text-xs tracking-widest uppercase" style="font-size:0.6rem;">Construction Ltd.</div>
+            </div>
+          </div>
+          <p class="text-gray-500 text-sm font-inter leading-relaxed">Building the National Capital Region's most trusted structures since 2000.</p>
+        </div>
+        <div>
+          <h4 class="font-montserrat font-bold text-white text-sm tracking-widest uppercase mb-5">Navigation</h4>
+          <nav class="flex flex-col">
+            <a href="index.html"    class="footer-link">Home</a>
+            <a href="projects.html" class="footer-link">Projects</a>
+            <a href="services.html" class="footer-link">Services</a>
+            <a href="about.html"    class="footer-link">About Us</a>
+            <a href="contact.html"  class="footer-link">Contact</a>
+          </nav>
+        </div>
+        <div>
+          <h4 class="font-montserrat font-bold text-white text-sm tracking-widest uppercase mb-5">Services</h4>
+          <nav class="flex flex-col">
+            <a href="services.html#general-contracting"      class="footer-link">General Contracting</a>
+            <a href="services.html#construction-management"  class="footer-link">Construction Management</a>
+            <a href="services.html#project-management"       class="footer-link">Project Management</a>
+            <a href="services.html#design-build"             class="footer-link">Design Build</a>
+          </nav>
+        </div>
+        <div>
+          <h4 class="font-montserrat font-bold text-white text-sm tracking-widest uppercase mb-5">Contact Us</h4>
+          <address class="not-italic text-gray-500 font-inter text-sm leading-loose">
+            6361 Fourth Line Road<br/>North Gower, ON &nbsp;K0A 2T0
+          </address>
+          <a href="tel:6135919100" class="block text-gray-400 hover:text-gold transition-colors font-inter text-sm mt-3">(613) 591-9100</a>
+          <a href="mailto:gcl@graebeck.com" class="block text-gray-400 hover:text-gold transition-colors font-inter text-sm">gcl@graebeck.com</a>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-gray-600 text-xs font-inter">
+        <span>&copy; 2025 Graebeck Construction Ltd. All rights reserved.</span>
+        <span>North Gower, ON &nbsp;·&nbsp; (613) 591-9100</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
