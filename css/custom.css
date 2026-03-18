@@ -436,7 +436,6 @@ body {
 /* ── Page Hero (inner pages) ── */
 .page-hero {
   padding: 160px 0 80px;
-  background: var(--onyx);
   position: relative;
   overflow: hidden;
 }
