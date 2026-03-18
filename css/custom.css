@@ -29,19 +29,62 @@ body {
 #navbar {
   background: linear-gradient(
     to bottom,
-    rgba(0, 0, 0, 0.75) 0%,
-    rgba(0, 0, 0, 0.35) 60%,
+    rgba(0, 0, 0, 0.82) 0%,
+    rgba(0, 0, 0, 0.45) 55%,
     transparent 100%
   );
   transition: background 0.4s ease, box-shadow 0.4s ease;
+  position: relative;
+}
+/* (C) Gold accent line along the top of the navbar */
+#navbar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--gold) 30%,
+    var(--gold) 70%,
+    transparent 100%
+  );
+  opacity: 0.7;
+  pointer-events: none;
 }
 #navbar.nav-scrolled {
   background: var(--onyx) !important;
   box-shadow: 0 2px 20px rgba(0,0,0,0.4);
 }
-/* Logo always renders in natural original colours */
+/* (B) Dark backing pill behind the logo for contrast on light backgrounds */
+.nav-logo {
+  background: rgba(0, 0, 0, 0.28);
+  padding: 6px 12px 6px 6px;
+  border-radius: 6px;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  transition: background 0.2s ease;
+}
+.nav-logo:hover {
+  background: rgba(0, 0, 0, 0.38);
+}
+/* Remove backing pill once navbar is solid */
+#navbar.nav-scrolled .nav-logo {
+  background: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  padding: 6px;
+}
+/* (D) Drop-shadow on logo image for edge definition */
 .nav-logo img {
-  filter: none !important;
+  -webkit-filter: drop-shadow(0px 1px 6px rgba(0,0,0,0.7));
+  filter: drop-shadow(0px 1px 6px rgba(0,0,0,0.7));
+}
+#navbar.nav-scrolled .nav-logo img {
+  -webkit-filter: drop-shadow(0px 1px 4px rgba(0,0,0,0.4));
+  filter: drop-shadow(0px 1px 4px rgba(0,0,0,0.4));
 }
 .nav-link {
   font-family: 'Montserrat', sans-serif;
