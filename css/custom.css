@@ -27,20 +27,21 @@ body {
 
 /* ── Navbar ── */
 #navbar {
-  background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%, transparent 100%);
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.75) 0%,
+    rgba(0, 0, 0, 0.35) 60%,
+    transparent 100%
+  );
   transition: background 0.4s ease, box-shadow 0.4s ease;
 }
 #navbar.nav-scrolled {
   background: var(--onyx) !important;
   box-shadow: 0 2px 20px rgba(0,0,0,0.4);
 }
-/* Logo visibility: white/inverted when nav is transparent, natural when scrolled */
-#navbar:not(.nav-scrolled) .nav-logo img {
-  filter: brightness(0) invert(1);
-}
-#navbar.nav-scrolled .nav-logo img {
-  filter: none;
-  transition: filter 0.3s ease;
+/* Logo always renders in natural original colours */
+.nav-logo img {
+  filter: none !important;
 }
 .nav-link {
   font-family: 'Montserrat', sans-serif;
