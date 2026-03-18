@@ -31,13 +31,7 @@
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
       <div class="flex items-center justify-between h-20">
         <a href="index.html" class="flex items-center gap-3 no-underline">
-          <div class="footer-logo-mark" style="width:44px;height:44px;">
-            <span class="font-montserrat font-black text-onyx text-xl">G</span>
-          </div>
-          <div>
-            <div class="font-montserrat font-black text-white text-lg tracking-wider leading-none">GRAEBECK</div>
-            <div class="text-gray-400 text-xs tracking-widest uppercase font-inter" style="font-size:0.6rem;">Construction Ltd.</div>
-          </div>
+          <img src="images/logo.png" alt="Graebeck Construction Ltd." style="height:48px;width:auto;display:block;" />
         </a>
         <div class="hidden md:flex items-center gap-10">
           <a href="index.html"    class="nav-link">Home</a>
@@ -82,7 +76,8 @@
         <button class="filter-btn active" data-filter="all">All Projects</button>
         <button class="filter-btn" data-filter="institutional">Institutional</button>
         <button class="filter-btn" data-filter="commercial">Commercial</button>
-        <button class="filter-btn" data-filter="historical">Historical Restoration</button>
+        <button class="filter-btn" data-filter="industrial">Industrial</button>
+        <button class="filter-btn" data-filter="heritage">Heritage</button>
       </div>
 
       <!-- ─── PROJECT CARDS GRID ─────────────────────────────
@@ -92,9 +87,9 @@
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
         <!-- Parliament Hill -->
-        <div data-category="historical" data-reveal>
+        <div data-category="heritage" data-reveal>
           <div class="project-card" style="height:340px;">
-            <img src="https://images.unsplash.com/photo-1541874172-b40a7b99c1d0?w=800&q=80"
+            <img src="images/projects/parliament-hill.jpg"
                  alt="Parliament Hill West Slope" loading="lazy" />
             <div class="project-card-overlay"></div>
             <div class="project-card-arrow">
@@ -103,7 +98,7 @@
             <div class="project-card-content">
               <span class="project-card-tag" style="background:#8B5E3C;">Historical</span>
               <h3 class="font-montserrat font-bold text-white text-xl mb-1">Parliament Hill</h3>
-              <p class="text-gray-300 text-sm font-inter">West Slope & Perimeter Wall — Wellington St., Ottawa, ON</p>
+              <p class="text-gray-300 text-sm font-inter">Wellington St., Ottawa, Ontario K1A 0A4</p>
             </div>
             <a href="project-parliament.html" class="absolute inset-0" aria-label="Parliament Hill"></a>
           </div>
@@ -112,7 +107,7 @@
         <!-- Almonte Hospital -->
         <div data-category="institutional" data-reveal data-delay="80">
           <div class="project-card" style="height:340px;">
-            <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&q=80"
+            <img src="images/projects/almonte-hospital.jpg"
                  alt="Almonte General Hospital" loading="lazy" />
             <div class="project-card-overlay"></div>
             <div class="project-card-arrow">
@@ -121,25 +116,25 @@
             <div class="project-card-content">
               <span class="project-card-tag">Institutional</span>
               <h3 class="font-montserrat font-bold text-white text-xl mb-1">Almonte Hospital</h3>
-              <p class="text-gray-300 text-sm font-inter">75 Spring Street — Almonte, ON</p>
+              <p class="text-gray-300 text-sm font-inter">75 Spring Street, Almonte, Ontario K0A 1A0</p>
             </div>
             <a href="project-hospital.html" class="absolute inset-0" aria-label="Almonte Hospital"></a>
           </div>
         </div>
 
         <!-- Earnscliffe -->
-        <div data-category="historical" data-reveal data-delay="160">
+        <div data-category="heritage" data-reveal data-delay="160">
           <div class="project-card" style="height:340px;">
-            <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800&q=80"
-                 alt="Earnscliffe National Historic Site" loading="lazy" />
+            <img src="images/projects/earnscliffe.jpg"
+                 alt="Earnscliffe National Historic Site of Canada" loading="lazy" />
             <div class="project-card-overlay"></div>
             <div class="project-card-arrow">
               <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
             </div>
             <div class="project-card-content">
               <span class="project-card-tag" style="background:#8B5E3C;">Historical</span>
-              <h3 class="font-montserrat font-bold text-white text-xl mb-1">Earnscliffe Historic Site</h3>
-              <p class="text-gray-300 text-sm font-inter">40 Sussex Drive — Ottawa, ON</p>
+              <h3 class="font-montserrat font-bold text-white text-xl mb-1">Earnscliffe National Historic Site of Canada</h3>
+              <p class="text-gray-300 text-sm font-inter">40 Sussex Drive, Ottawa, Ontario K1N 5A2</p>
             </div>
             <a href="project-restoration.html" class="absolute inset-0" aria-label="Earnscliffe National Historic Site"></a>
           </div>
@@ -148,7 +143,7 @@
         <!-- C.D. Howe Building -->
         <div data-category="commercial" data-reveal data-delay="60">
           <div class="project-card" style="height:340px;">
-            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80"
+            <img src="images/projects/cd-howe-building.jpg"
                  alt="C.D. Howe Building" loading="lazy" />
             <div class="project-card-overlay"></div>
             <div class="project-card-arrow">
@@ -157,7 +152,7 @@
             <div class="project-card-content">
               <span class="project-card-tag" style="background:#1a5c3a;">Commercial</span>
               <h3 class="font-montserrat font-bold text-white text-xl mb-1">C.D. Howe Building</h3>
-              <p class="text-gray-300 text-sm font-inter">LEED Silver — 240 Sparks Street, Ottawa, ON</p>
+              <p class="text-gray-300 text-sm font-inter">240 Sparks Street, Ottawa, Ontario K1A 0X8</p>
             </div>
             <a href="project-commercial.html" class="absolute inset-0" aria-label="C.D. Howe Building"></a>
           </div>
@@ -166,7 +161,7 @@
         <!-- Montfort Hospital -->
         <div data-category="institutional" data-reveal data-delay="140">
           <div class="project-card" style="height:340px;">
-            <img src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?w=800&q=80"
+            <img src="images/projects/montfort-hospital.jpg"
                  alt="Montfort Hospital" loading="lazy" />
             <div class="project-card-overlay"></div>
             <div class="project-card-arrow">
@@ -175,61 +170,61 @@
             <div class="project-card-content">
               <span class="project-card-tag">Institutional</span>
               <h3 class="font-montserrat font-bold text-white text-xl mb-1">Montfort Hospital</h3>
-              <p class="text-gray-300 text-sm font-inter">713 Montreal Road — Ottawa, ON</p>
+              <p class="text-gray-300 text-sm font-inter">713 Montreal Road, Ottawa, Ontario K1K 0T2</p>
             </div>
             <a href="project-montfort.html" class="absolute inset-0" aria-label="Montfort Hospital"></a>
           </div>
         </div>
 
         <!-- Egyptian Residence -->
-        <div data-category="historical" data-reveal data-delay="220">
+        <div data-category="heritage" data-reveal data-delay="220">
           <div class="project-card" style="height:340px;">
-            <img src="https://images.unsplash.com/photo-1448630360428-65456885c650?w=800&q=80"
-                 alt="Egyptian Embassy Residence" loading="lazy" />
+            <img src="images/projects/egyptian-embassy.jpg"
+                 alt="Egyptian Residence" loading="lazy" />
             <div class="project-card-overlay"></div>
             <div class="project-card-arrow">
               <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
             </div>
             <div class="project-card-content">
               <span class="project-card-tag" style="background:#8B5E3C;">Historical</span>
-              <h3 class="font-montserrat font-bold text-white text-xl mb-1">Egyptian Embassy Residence</h3>
-              <p class="text-gray-300 text-sm font-inter">454 Laurier Ave E — Ottawa, ON</p>
+              <h3 class="font-montserrat font-bold text-white text-xl mb-1">Egyptian Residence</h3>
+              <p class="text-gray-300 text-sm font-inter">454 Laurier Ave E, Ottawa, Ontario</p>
             </div>
             <a href="project-egyptian.html" class="absolute inset-0" aria-label="Egyptian Embassy Residence"></a>
           </div>
         </div>
 
         <!-- Beau-roc -->
-        <div data-category="commercial" data-reveal data-delay="100">
+        <div data-category="industrial" data-reveal data-delay="100">
           <div class="project-card" style="height:340px;">
-            <img src="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?w=800&q=80"
-                 alt="Beau-roc Industrial Facility" loading="lazy" />
+            <img src="images/projects/beau-roc.jpg"
+                 alt="Les Ateliers Beau-Roc" loading="lazy" />
             <div class="project-card-overlay"></div>
             <div class="project-card-arrow">
               <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
             </div>
             <div class="project-card-content">
-              <span class="project-card-tag" style="background:#1a5c3a;">Commercial</span>
-              <h3 class="font-montserrat font-bold text-white text-xl mb-1">Beau-roc Industrial</h3>
-              <p class="text-gray-300 text-sm font-inter">40,000 sq ft Facility — Vars, ON</p>
+              <span class="project-card-tag" style="background:#4a5568;">Industrial</span>
+              <h3 class="font-montserrat font-bold text-white text-xl mb-1">Les Ateliers Beau-Roc</h3>
+              <p class="text-gray-300 text-sm font-inter">115 Clement Street, Vars, Ontario K0A 3H0</p>
             </div>
             <a href="project-beau-roc.html" class="absolute inset-0" aria-label="Beau-roc Industrial Facility"></a>
           </div>
         </div>
 
         <!-- Commissionaires Ottawa -->
-        <div data-category="institutional" data-reveal data-delay="180">
+        <div data-category="commercial" data-reveal data-delay="180">
           <div class="project-card" style="height:340px;">
-            <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&q=80"
+            <img src="images/projects/commissionaires.jpg"
                  alt="Commissionaires Ottawa" loading="lazy" />
             <div class="project-card-overlay"></div>
             <div class="project-card-arrow">
               <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
             </div>
             <div class="project-card-content">
-              <span class="project-card-tag">Institutional</span>
+              <span class="project-card-tag" style="background:#1a5c3a;">Commercial</span>
               <h3 class="font-montserrat font-bold text-white text-xl mb-1">Commissionaires Ottawa</h3>
-              <p class="text-gray-300 text-sm font-inter">24 Colonnade Road — Ottawa, ON</p>
+              <p class="text-gray-300 text-sm font-inter">24 Colonnade Road, Ottawa, Ontario K2E 7J6</p>
             </div>
             <a href="project-commissionaires.html" class="absolute inset-0" aria-label="Commissionaires Ottawa"></a>
           </div>
@@ -256,11 +251,7 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
         <div class="lg:col-span-1">
           <div class="flex items-center gap-3 mb-5">
-            <div class="footer-logo-mark"><span class="font-montserrat font-black text-onyx text-xl">G</span></div>
-            <div>
-              <div class="font-montserrat font-black text-white text-lg tracking-wider leading-none">GRAEBECK</div>
-              <div class="text-gray-500 text-xs tracking-widest uppercase" style="font-size:0.6rem;">Construction Ltd.</div>
-            </div>
+            <img src="images/logo-footer.png" alt="Graebeck Construction Ltd." style="height:40px;width:auto;display:block;" />
           </div>
           <p class="text-gray-500 text-sm font-inter leading-relaxed">Building the National Capital Region's most trusted structures since 2000.</p>
         </div>
