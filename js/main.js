@@ -198,4 +198,11 @@
     });
   }
 
+  /* ── Ken Burns for page hero backgrounds ── */
+  window.addEventListener('load', function () {
+    document.querySelectorAll('.page-hero-bg').forEach(function (el) {
+      el.classList.add('loaded');
+    });
+  });
+
 })();
