@@ -18,8 +18,8 @@
             forest: '#227750',
             'forest-dark': '#1a5c3a',
             cool:   '#F4F4F9',
-            gold:   '#D4AF37',
-            'gold-light': '#e8c84a',
+            gold:   '#005193',
+            'gold-light': '#0066b8',
           },
           fontFamily: {
             montserrat: ['Montserrat', 'sans-serif'],
@@ -31,6 +31,19 @@
   </script>
   <link rel="stylesheet" href="css/custom.css" />
   <style>
+    /* Homepage-only logo animation: slide in from left */
+    @-webkit-keyframes logoEntranceX {
+      from { opacity: 0; -webkit-transform: translateX(-60px); transform: translateX(-60px); }
+      to   { opacity: 1; -webkit-transform: translateX(0);     transform: translateX(0); }
+    }
+    @keyframes logoEntranceX {
+      from { opacity: 0; -webkit-transform: translateX(-60px); transform: translateX(-60px); }
+      to   { opacity: 1; -webkit-transform: translateX(0);     transform: translateX(0); }
+    }
+    .nav-logo img {
+      -webkit-animation: logoEntranceX 0.8s ease-out both !important;
+              animation: logoEntranceX 0.8s ease-out both !important;
+    }
     #hero-bg {
       position: absolute;
       inset: 0;
@@ -92,7 +105,7 @@
       <a href="projects.html" class="mobile-nav-link">Projects</a>
       <a href="services.html" class="mobile-nav-link">Services</a>
       <a href="about.html"    class="mobile-nav-link">About</a>
-      <a href="contact.html"  class="mobile-nav-link" style="color:#D4AF37;">Get a Quote →</a>
+      <a href="contact.html"  class="mobile-nav-link" style="color:#005193;">Get a Quote →</a>
     </div>
   </nav>
 
@@ -113,7 +126,7 @@
 
         <h1 class="heading-display text-white" style="font-size:clamp(2.8rem,6vw,5.5rem);" data-reveal>
           Building Ottawa's<br />
-          <span style="color:#D4AF37;">Legacy</span>, One<br />
+          <span style="color:#005193;">Legacy</span>, One<br />
           Structure at a Time.
         </h1>
 
@@ -161,7 +174,7 @@
           <div class="stat-label">LEED Committed</div>
         </div>
         <div class="stat-item">
-          <span class="stat-number" style="font-size:2.2rem;color:#D4AF37;">Zero</span>
+          <span class="stat-number" style="font-size:2.2rem;color:#005193;">Zero</span>
           <div class="stat-label">Lost-Time Incidents</div>
         </div>
 
