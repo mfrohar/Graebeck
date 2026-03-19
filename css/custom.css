@@ -56,6 +56,35 @@ body {
 .nav-logo img {
   -webkit-filter: drop-shadow(0px 1px 3px rgba(0,0,0,0.25));
   filter: drop-shadow(0px 1px 3px rgba(0,0,0,0.25));
+  /* Slide-up fade-in on page load */
+  -webkit-animation: logoEntrance 0.8s ease-out both;
+          animation: logoEntrance 0.8s ease-out both;
+}
+
+/* Keyframes — prefixed + unprefixed for full browser coverage */
+@-webkit-keyframes logoEntrance {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes logoEntrance {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 /* Navbar CTA: dark button contrasts against gold background */
 #navbar .btn-primary {
