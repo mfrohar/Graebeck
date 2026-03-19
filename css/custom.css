@@ -27,13 +27,13 @@ body {
 
 /* ── Navbar ── */
 #navbar {
-  background: #a3a5b5 !important;
+  background: #ffffff !important;
   box-shadow: 0 2px 24px rgba(0, 0, 0, 0.25);
   transition: box-shadow 0.4s ease;
   position: relative;
 }
 #navbar.nav-scrolled {
-  background: #a3a5b5 !important;
+  background: #ffffff !important;
   box-shadow: 0 2px 24px rgba(0, 0, 0, 0.3);
 }
 /* Logo sits directly on gold gradient — no dark backing */
@@ -58,37 +58,37 @@ body.page-home .nav-logo img {
 @-webkit-keyframes logoEntrance {
   from {
     opacity: 0;
-    -webkit-transform: translateY(40px);
-            transform: translateY(40px);
+    -webkit-transform: translateX(-60px);
+            transform: translateX(-60px);
   }
   to {
     opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 @keyframes logoEntrance {
   from {
     opacity: 0;
-    -webkit-transform: translateY(40px);
-            transform: translateY(40px);
+    -webkit-transform: translateX(-60px);
+            transform: translateX(-60px);
   }
   to {
     opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
-/* Navbar CTA: dark button contrasts against #a3a5b5 background */
+/* Navbar CTA */
 #navbar .btn-primary {
-  background: #1A1A1A;
+  background: #005193;
   color: #ffffff;
-  border-color: #1A1A1A;
+  border-color: #005193;
 }
 #navbar .btn-primary:hover {
-  background: #2a2a2a;
+  background: #0066b8;
   color: #ffffff;
-  border-color: #2a2a2a;
+  border-color: #0066b8;
   transform: translateY(-2px);
 }
 .nav-link {
@@ -97,7 +97,7 @@ body.page-home .nav-logo img {
   font-size: 0.8rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #005193;
   text-decoration: none;
   position: relative;
   padding-bottom: 4px;
@@ -110,13 +110,13 @@ body.page-home .nav-logo img {
   left: 0;
   width: 0;
   height: 2px;
-  background: #ffffff;
+  background: #005193;
   transition: width 0.3s ease;
 }
 .nav-link:hover::after,
 .nav-link.active::after { width: 100%; }
-.nav-link:hover { color: #ffffff; }
-.nav-link.active { color: #ffffff; }
+.nav-link:hover { color: #005193; }
+.nav-link.active { color: #005193; }
 
 /* ── Hero ── */
 .hero-section {
@@ -143,7 +143,7 @@ body.page-home .nav-logo img {
   gap: 8px;
   background: rgba(0,81,147,0.15);
   border: 1px solid rgba(0,81,147,0.4);
-  color: var(--gold);
+  color: #ffffff;
   font-family: 'Montserrat', sans-serif;
   font-size: 0.7rem;
   font-weight: 700;
@@ -155,7 +155,7 @@ body.page-home .nav-logo img {
 }
 .hero-badge .dot {
   width: 6px; height: 6px;
-  background: var(--gold);
+  background: #ffffff;
   border-radius: 50%;
   animation: pulse-dot 2s infinite;
 }
@@ -192,7 +192,7 @@ body.page-home .nav-logo img {
   align-items: center;
   gap: 10px;
   background: var(--gold);
-  color: var(--onyx);
+  color: #ffffff;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 0.8rem;
@@ -235,22 +235,23 @@ body.page-home .nav-logo img {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  background: var(--onyx);
-  color: #fff;
+  background: #005193;
+  color: #ffffff;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 0.8rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   padding: 16px 32px;
-  border: 2px solid var(--onyx);
+  border: 2px solid #005193;
   text-decoration: none;
   transition: background 0.25s, color 0.25s, border-color 0.25s, transform 0.2s;
   cursor: pointer;
 }
 .btn-dark:hover {
-  background: transparent;
-  color: var(--onyx);
+  background: #0066b8;
+  color: #ffffff;
+  border-color: #0066b8;
   transform: translateY(-2px);
 }
 
@@ -383,12 +384,14 @@ body.page-home .nav-logo img {
   position: relative;
   width: 100%;
   display: block;
+  padding-bottom: 28px;
+  padding-right: 28px;
 }
 .about-img-wrapper::before {
   content: '';
   position: absolute;
   top: 24px; left: 24px;
-  right: -24px; bottom: -24px;
+  right: 0; bottom: 0;
   border: 3px solid var(--gold);
   z-index: 0;
 }
@@ -609,7 +612,7 @@ body.page-home .nav-logo img {
 .hamburger span {
   display: block;
   width: 26px; height: 2px;
-  background: #ffffff;
+  background: #005193;
   transition: transform 0.3s, opacity 0.3s, width 0.3s;
 }
 .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
