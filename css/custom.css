@@ -141,7 +141,9 @@ body.page-home .nav-logo img {
 .hero-line {
   display: block;
   opacity: 0;
-  animation: 0.75s ease-out forwards;
+  animation-duration: 0.75s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
 }
 .hero-line-1 {
   animation-name: heroFromLeft;
