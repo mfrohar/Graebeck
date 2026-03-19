@@ -141,16 +141,38 @@ body.page-home .nav-logo img {
 .hero-line {
   display: block;
   opacity: 0;
-  transform: translateY(24px);
-  animation: heroLineIn 0.7s ease-out forwards;
+  animation: 0.75s ease-out forwards;
 }
-.hero-line-1 { animation-delay: 0.1s; }
-.hero-line-2 { animation-delay: 0.4s; }
-.hero-line-3 { animation-delay: 0.7s; }
-@keyframes heroLineIn {
+.hero-line-1 {
+  animation-name: heroFromLeft;
+  animation-delay: 0.1s;
+}
+.hero-line-2 {
+  animation-name: heroFromRight;
+  animation-delay: 0.4s;
+}
+.hero-line-3 {
+  animation-name: heroFromLeft;
+  animation-delay: 0.7s;
+}
+@keyframes heroFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0);
+  }
+}
+@keyframes heroFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 
