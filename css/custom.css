@@ -123,7 +123,7 @@ body.page-home .nav-logo img {
   position: relative;
   min-height: 100vh;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   overflow: hidden;
 }
 /* .hero-bg removed — replaced by #hero-canvas SVG in index.html */
